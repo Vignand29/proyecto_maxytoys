@@ -13,7 +13,7 @@
 
  <nav class="menu__navegacion">
        <div class="logo">
-           <a href=""><img src="./imagenes/nuevo logo.svg" alt="logo">
+           <a href="./index.html"><img src="./imagenes/nuevo logo.svg" alt="logo">
            </div></a>
         <ul class="menu_lista">
                    <li class="item_menu active"><a class="item_menu_link" href="./index.html">Home</a></li>
@@ -21,55 +21,79 @@
                    <li class="item_menu"> <a class="item_menu_link" href="./paginas/preventa.html">Preventa</a></li>
                    <li class="item_menu"> <a class="item_menu_link" href="./paginas/sale.html">Sale</a></li>
                    <li class="item_menu"> <a class="item_menu_link" href="./paginas/contacto.html">Contacto</a></li>
-   
-       </ul>
-      
+       </ul>  
  </nav>
 
  <!-------------------------------- header--------------------------------------->
- <header class="anuncio_principal">
+ <header>
     
-    <button>Ver mas <i class="bi bi-send"></i></button>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/baner paw patrol mighty movie.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/banner-principal-m-mattel.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/banner-pagina-web-maxitoys.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
  </header>
 
 <!-----------------------main---------------------------------->
 <main>
     <section class="productos">
 
-        <div class="verde">
+        <div class="carta_producto paw">
             <a href="./paginas/productos.html"><img src="./imagenes/pawpatrolestreno.jpg.webp" alt="">
             </a>
-            <h2>PAW PATROL</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>Paw Patrol</h2>
+            <p>Todos los juguetes de <strong>PAW PATROL</strong> los encuentras aqui en
+                maxitoys.</p>
         </div>
 
 
-        <div class="rojo"> 
+        <div class="carta_producto spidey"> 
             <a href="./paginas/productos.html"> <img src="./imagenes/spidey-and-his-amazing-friends.webp" alt="">
             </a>
-            <h2>SPIDEY AND FRIENDS</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>Spidey Amazing Friends</h2>
+            <p>El hombre araña y sus Amigos
+                llegaron a maxitoys, aqui encontraras lo mas nuevo de spidey.</p>
         </div>
 
 
-        <div class="amarillo">
+        <div class="carta_producto lego">
             <a href="./paginas/productos.html">
                 <img src="./imagenes/arte-1200x630-recuperado_b64503fd-a3c8-4148-9c1f-fc9bdb7682ab.webp" alt="">
             </a>
-            <h2>LEGO </h2>
-            <p> Lorem ipsum dolor sit amet.</p>
+            <h2>Lego </h2>
+            <p> Desarrola toda la creatividad de tus hijos
+                con los legos mas famosos, aqui encontraras los modelos
+                mas nuevos y divertidos para armar.
+            </p>
 
         </div>
-        <div class="hasbro">
+        <div class="banner_producto mattel">
             <a href="#"> <img src="./imagenes/shop-home-bsa-image-desktop.jpeg" alt=""></a>
-            <h2>MUNDO HASBRO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2>Mundo Hasbro</h2>
+            <p>Explora todos los juguetes de esta marca y encuentra tu favorito</p>
 
         </div>
-        <div class="mattel">
+        <div class="banner_producto hasbro">
             <a href="#"><img src="./imagenes/Mattel Official Store Klik Indomaret.jpeg" alt=""></a>
-            <h2>MUNDO MATTEL</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2>Mundo MatteL</h2>
+            <p>Explora todos los juguetes de esta marca y encuentra tu favorito.</p>
         </div>
 
 

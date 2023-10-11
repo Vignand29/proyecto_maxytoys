@@ -18,7 +18,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    background-color:#1c262d;
+    background-color:#1f84cd;
     position: sticky;
     top:0;
 }
@@ -39,59 +39,27 @@ body{
     cursor: pointer;
 }
 .menu_lista a:hover{
-    color:rgb(255, 39, 197);
+    color:#fdb204;
 }
 
 .active a{
-    text-decoration:overline; 
+    text-decoration:underline;
 }
 
 
 .logo{
-    width: 70px;
-    height: 50px;
+    width: 60px;
     cursor: pointer;
+    
 
 }
 /********************** header **********************/
 
-   
-    
-
-.anuncio_principal{
+ .carousel-item img{
     width: 100%;
-    height: 50vh;
-    min-height: 350px;
-    background: url(../imagenes/banner-pagina-web-maxitoys.png);
-    background-size: cover;
-    background-position: center;
-   display: flex;
-   flex-direction: column;
-   justify-content:center;
-   align-items:center
+    height: 400px;
+ }
 
-}
-header h1{
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-    text-transform: capitalize;
-    background-color: #1e191cf1; 
-    border-radius: 3px;
-    width: 500px;
-}
-header button{
-    padding: 15px 20px;
-    font-size: 20px;
-    border:none;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
-    background: #3a0ae7;
-    margin: 20px;
-    color: #fff;
-  
-}
 /********* main *********/
 
 
@@ -99,67 +67,52 @@ header button{
 
 .productos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr  ;
-    grid-template-areas: 
-    " amarillo rojo verde "
-    " hasbro hasbro hasbro "
-    "mattel mattel mattel";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     margin: 60px;
     gap:20px;
+    grid-template-areas:
+     "paw  lego spidey "
+     " mattel mattel mattel" 
+     " hasbro hasbro hasbro" ;
 }
-.hasbro{
-    grid-area: hasbro;
+.banner_producto{
     text-align: center;
-    border: 2px solid black;
-
-}
-.hasbro img{
-    width: 100%;
-    height: 300px;
+    box-shadow: 0 2px 7px #08046b;
+    
 }
 .mattel{
     grid-area: mattel;
-    text-align: center;
-    border: 2px solid black;
 }
-.mattel img{
+.hasbro{
+    grid-area: hasbro;
+}
+.banner_producto img{
     width: 100%;
     height: 300px;
 }
-.rojo{
-    background-color:#fff;
-    grid-area: rojo;
-    border: 2px solid black;
+.carta_producto{
+    background-color: #fff;
     text-align: center;
-
-}
-.rojo img{
-    width: 100%;
-    height:241px;
-}
-.verde img{
-    width: 100%;
-    height: 241px;
+    box-shadow: 0 2px 7px #08046b;
     
 }
-.amarillo img{
+.paw{
+    grid-area: paw;
+}
+.lego{
+    grid-area: lego;
+}
+.spidey{
+    grid-area: spidey;
+}
+.carta_producto img{
     width: 100%;
-    height: 241px;
+    height: 250px;
+    object-fit: cover;
+   
 }
-.amarillo{
-    background-color: #fff;
-    grid-area: amarillo;
-    border: 2px solid black;
-    text-align: center;
-}
-.verde{
-    background-color:#fff;
-    grid-area: verde;
-    border: 2px solid rgba(0, 0, 0, 0.767);
-    text-align:center;
 
-}
 
 /************ footer ***********/
 footer{
