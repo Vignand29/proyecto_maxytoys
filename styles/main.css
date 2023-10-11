@@ -1,0 +1,318 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Red+Hat+Display:wght@500&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: rgba(251, 251, 251, 0.885);
+}
+
+
+/************* menu navegacion ***********************/
+.menu__navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:#1c262d;
+    position: sticky;
+    top:0;
+}
+.menu_lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    flex-direction:row;
+    cursor: pointer;
+}
+.item_menu_link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#ebe6e6;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.menu_lista a:hover{
+    color:rgb(255, 39, 197);
+}
+
+.active a{
+    text-decoration:overline; 
+}
+
+
+.logo{
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+
+}
+/********************** header **********************/
+
+   
+    
+
+.anuncio_principal{
+    width: 100%;
+    height: 50vh;
+    min-height: 350px;
+    background: url(../imagenes/banner-pagina-web-maxitoys.png);
+    background-size: cover;
+    background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items:center
+
+}
+header h1{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #1e191cf1; 
+    border-radius: 3px;
+    width: 500px;
+}
+header button{
+    padding: 15px 20px;
+    font-size: 20px;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #3a0ae7;
+    margin: 20px;
+    color: #fff;
+  
+}
+/********* main *********/
+
+
+   /************** pagina principal***********/
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr  ;
+    grid-template-areas: 
+    " amarillo rojo verde "
+    " hasbro hasbro hasbro "
+    "mattel mattel mattel";
+    margin: 60px;
+    gap:20px;
+}
+.hasbro{
+    grid-area: hasbro;
+    text-align: center;
+    border: 2px solid black;
+
+}
+.hasbro img{
+    width: 100%;
+    height: 300px;
+}
+.mattel{
+    grid-area: mattel;
+    text-align: center;
+    border: 2px solid black;
+}
+.mattel img{
+    width: 100%;
+    height: 300px;
+}
+.rojo{
+    background-color:#fff;
+    grid-area: rojo;
+    border: 2px solid black;
+    text-align: center;
+
+}
+.rojo img{
+    width: 100%;
+    height:241px;
+}
+.verde img{
+    width: 100%;
+    height: 241px;
+    
+}
+.amarillo img{
+    width: 100%;
+    height: 241px;
+}
+.amarillo{
+    background-color: #fff;
+    grid-area: amarillo;
+    border: 2px solid black;
+    text-align: center;
+}
+.verde{
+    background-color:#fff;
+    grid-area: verde;
+    border: 2px solid rgba(0, 0, 0, 0.767);
+    text-align:center;
+
+}
+
+/************ footer ***********/
+footer{
+    margin-top: 100px;
+    background-color:#003049;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+   
+}
+.lista_footer{
+    display: flex;
+    
+  
+}
+.lista_footer li{
+    list-style: none;
+    
+}
+.lista_footer li a{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+.lista_footer li a .icon{
+    position: relative;
+    color:#262626;
+    transition: .5s;
+    z-index: 3;
+}
+.lista_footer li a:hover .icon{
+    color: #fffefe;
+}
+    
+.lista_footer li a:before {
+    content: "";
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+    
+}
+.lista_footer li a:hover:before{
+    top:0;
+}
+.lista_footer li:nth-child(1) a:before{
+    background: #dd2a7b;
+    
+}
+.lista_footer li:nth-child(2) a:before{
+    background: #3b5999;
+}
+.lista_footer li:nth-child(3) a:before{
+    background: #25d366;
+}
+.lista_footer li:nth-child(4) a:before{
+    background: #040404;
+}
+.site_footer hr{
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+.site_footer hr.small{
+    margin: 20px 0;
+}
+.site_footer h6{
+    color:#fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+.site_footer a{
+    color: #737373;
+    text-decoration: none;
+}
+.site_footer a:hover{
+    color: #3366cc;
+    text-decoration: none;
+}
+.footer_links{
+    padding-left: 0;
+    list-style: none;
+}
+.footer_links li{
+    display: block;
+}
+.footer_links a{
+    color:#737373;
+}
+.footer_links a:active, .footer-links a:focus, .footer-links a:hover{
+    color:#3366cc;
+    text-decoration: none;
+}
+.footer_links .inline li{
+    display: inline-block;
+}
+
+
+
+
+
+@media screen and (max-width: 780px)
+{
+.menu__navegacion ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 55px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 55px);
+    transform: translate(-101%);
+    text-align: center;
+    overflow: hidden;
+}
+.menu__navegacion li{
+    padding: 15px;
+}
+.menu__navegacion li:first-child{
+    margin-top: 50px;
+}
+.menu__navegacion li a{
+    font-size: 1rem;
+}
+ }
+ .productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "amarillo "
+    "verde"
+    "rojo"
+    "hasbro"
+    "mattel";
+ }
+
+  
+  
+
+    
