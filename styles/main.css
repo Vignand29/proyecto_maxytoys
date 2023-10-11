@@ -300,17 +300,17 @@ footer{
 .menu__navegacion li a{
     font-size: 1rem;
 }
- }
- .productos{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "amarillo "
-    "verde"
-    "rojo"
-    "hasbro"
-    "mattel";
- }
+.productos{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-areas: 
+   "amarillo "
+   "verde"
+   "rojo"
+   "hasbro"
+   "mattel";
+}
+}
 
   
   
