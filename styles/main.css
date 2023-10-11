@@ -69,7 +69,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin: 60px;
+    margin: 20px;
     gap:20px;
     grid-template-areas:
      "paw  lego spidey "
@@ -232,20 +232,15 @@ footer{
 @media screen and (max-width: 780px)
 {
 .menu__navegacion ul{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    justify-content: start;
-    top: 55px;
-    background-color: #fff;
-    width: 100%;
-    height: calc(100vh - 55px);
-    transform: translate(-101%);
-    text-align: center;
-    overflow: hidden;
+overflow: hidden;
+
+flex-direction: column;
+
+
+    
 }
 .menu__navegacion li{
-    padding: 15px;
+    padding: 5px;
 }
 .menu__navegacion li:first-child{
     margin-top: 50px;
@@ -255,13 +250,13 @@ footer{
 }
 .productos{
    display: grid;
-   grid-template-columns: 1fr;
+   grid-template-columns: 100%;
    grid-template-areas: 
-   "amarillo "
-   "verde"
-   "rojo"
+   "paw"
+   "spidey"
    "hasbro"
-   "mattel";
+   "mattel"
+   "lego";
 }
 }
 
