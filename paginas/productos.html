@@ -3,277 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/cartaproducto.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Productos</title>
 
 </head>
 <body>
-    <nav class="menu__navegacion">
-        <div class="logo">
-            <a href=""><img src="../imagenes/nuevo logo.svg" alt="logo">
-            </div></a>
-         <ul class="menu_lista">
-                    <li class="item_menu"><a class="item_menu_link" href="../index.html">Home</a></li>
-                    <li class="item_menu active"> <a class="item_menu_link" href="./productos.html">Productos</a></li>
-                    <li class="item_menu"> <a class="item_menu_link" href="./preventa.html">Preventa</a></li>
-                    <li class="item_menu"> <a class="item_menu_link" href="./sale.html">Sale</a></li>
-                    <li class="item_menu"> <a class="item_menu_link" href="./contacto.html">Contacto</a></li>
+ <header>
+        <nav class=" navbar navbar-expand-lg">
+            <div>
+                <a href=""><img class="logo" src="../imagenes/nuevo logo.svg" alt=""></a>
+            </div>
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navbar " id="navbarTogglerDemo01">
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="./paginas/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="./preventa.html">Preventa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./sale.html">Sale</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+ </header>
+<main>
+
+<section>
+    <div class="contenedor">
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto rocky.webp" alt="carro rocky">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"> Paw Patrol</span>
+                <h2><a href="#">Rocky mighty movie </a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price">
+                        <p>$19.000</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
     
-        </ul>
-       </nav>
-<header class="banner_productos">
-  todos los juguetes que buscas estan aqui
-
-</header>
-       
-  <div class="contenedor">
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto rocky.webp" alt="carro rocky">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Paw Patrol</span>
-            <h4><a href="#">Rocky mighty movie </a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$19.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
+                </div>
+    
             </div>
-
+    
         </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto skye.jpeg" alt="carro skype">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Paw Patrol</span>
-            <h4><a href="#">Skye mighty movie </a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$19.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto skye.jpeg" alt="carro skype">
             </div>
-
-        </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto rubble.jpeg" alt="carro rubble">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Paw Patrol</span>
-            <h4><a href="#">Rubble mighty movie </a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$19.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
+            <div class="product-details">
+                <span class="product-catagory"> Paw Patrol</span>
+                <h2><a href="#">Skye mighty movie </a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price">
+                        <p>$19.000 </p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
             </div>
-
+    
         </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto chase patrulla.jpeg" alt="carro chase patrulla">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Paw Patrol</span>
-            <h4><a href="#">Patrulla Chase </a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$25.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto rubble.jpeg" alt="carro rubble">
             </div>
-
+            <div class="product-details">
+                <span class="product-catagory"> Paw Patrol</span>
+                <h2><a href="#">Rubble mighty movie </a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$19.000</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto chase patrulla.jpeg" alt="carro chase patrulla">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"> Paw Patrol</span>
+                <h2><a href="#">Patrulla Chase </a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$25.000</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+            
+    
+        </div>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto chase rescue.jpeg" alt="carro chase rescue">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"> Paw Patrol</span>
+                <h2><a href="#">Chase Rescue</a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$17.000</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto araña autobus.jpeg" alt="autobus araña">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"> Spidey Amazing Friends</span>
+                <h2><a href="#">Spidey Bus </a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$35.000</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto araña carro.jpeg" alt="carro araña">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"> Spidey Amazing Friends</span>
+                <h2><a href="#">Spidey Carro  </a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$25.000</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto araña robot.jpeg" alt="araña robot">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"> Spidey Amazing Friends</span>
+                <h2><a href="#">Aracno Robot Spidey</a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$17.000</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto araña torre.jpeg" alt="torre spidey">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"> Spidey Amazing Friends</span>
+                <h2><a href="#">Transportador Spidey </a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$38.000</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/lego disney 100.jpeg" alt="lego disney">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"> Lego</span>
+                <h2><a href="#">Lego Disney 100</a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$28.000</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto lego creativo.jpeg" alt="lego creativo">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"> Lego</span>
+                <h2><a href="#">Lego Crerative </a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$18.900</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="../imagenes/producto lego ninjago.jpeg" alt="lego avatar">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Lego</span>
+                <h2><a href="#">Lego Avatar</a></h2>
+                <div class="product-bottom-details">
+                    <div class="product-price"><p>$25.990</p></div>
+                        <div class="product-links">
+                            <a href="#"><i class="bi bi-heart-fill"></i></a>
+                            <a href="#"><i class="bi bi-cart3"></i></a>
+                        </div>
+    
+                </div>
+    
+            </div>
+    
         </div>
         
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto chase rescue.jpeg" alt="carro chase rescue">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Paw Patrol</span>
-            <h4><a href="#">Chase Rescue</a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$17.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto araña autobus.jpeg" alt="autobus araña">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Spidey Amazing Friends</span>
-            <h4><a href="#">Spidey Bus </a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$35.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto araña carro.jpeg" alt="carro araña">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Spidey Amazing Friends</span>
-            <h4><a href="#">Spidey Carro  </a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$25.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto araña robot.jpeg" alt="araña robot">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Spidey Amazing Friends</span>
-            <h4><a href="#">Aracno Robot Spidey</a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$17.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto araña torre.jpeg" alt="torre spidey">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Spidey Amazing Friends</span>
-            <h4><a href="#">Transportador Spidey </a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$38.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/lego disney 100.jpeg" alt="lego disney">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Lego</span>
-            <h4><a href="#">Lego Disney 100</a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$28.000</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto lego creativo.jpeg" alt="lego creativo">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory"> Lego</span>
-            <h4><a href="#">Lego Crerative </a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$18.900</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <div class="product-card">
-        <div class="product-tumb">
-            <img src="../imagenes/producto lego ninjago.jpeg" alt="lego avatar">
-        </div>
-        <div class="product-details">
-            <span class="product-catagory">Lego</span>
-            <h4><a href="#">Lego Avatar</a></h4>
-            <div class="product-bottom-details">
-                <div class="product-price">$25.990</div>
-                    <div class="product-links">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
-                        <a href="#"><i class="bi bi-cart3"></i></a>
-                    </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    
-  </div>
+      </div>
+</section>
+</main>
+       
+  
  
 <footer class="site_footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6">
-                <h6>Acerca de Nosotros</h6>
+                <h3>Acerca de Nosotros</h3>
                 <p class="text-justify">Maxitoys empezo en el año 2023 en la comuna 
                     de huechuraba para llevar los juguetes mas nuevos a la comuna, todo
                     lo que buscas lo encontraras aqui, traemos nuestros juguetes directamente 
                     de Estados Unidos, traemos tambien pedidos especiales bajo encargo.</p>
             </div>
             <div class="col-xs-6 col-md-3">
-                <h6>Categorias</h6>
+                <h3>Categorias</h3>
                 <ul class="footer_links">
                     <li><a href="#">Juguetes</a></li>
                     <li><a href="#">Sale</a></li>
@@ -283,7 +305,7 @@
             </div>
             
             <div class="col-xs-6 col-md-3">
-                <h6>Envios</h6>
+                <h3>Envios</h3>
                 <ul class="footer_links">
                     <li><a href="#">Tiempo de Entrega</a></li>
                     <li><a href="#">Zonas de Reparto</a></li>

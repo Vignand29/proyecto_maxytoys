@@ -13,45 +13,23 @@ body{
 
 
 /************* menu navegacion ***********************/
-.menu__navegacion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    background-color:#1f84cd;
-    position: sticky;
-    top:0;
-}
-.menu_lista{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    gap: 20px;
-    flex-direction:row;
-    cursor: pointer;
-}
-.item_menu_link{
-    text-decoration: none;
-    text-transform: uppercase;
-    color:#ebe6e6;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.menu_lista a:hover{
-    color:#fdb204;
+.navbar{
+    background-color: #ecdfd2;
+    padding: 0 26px;
+  
 }
 
-.active a{
-    text-decoration:underline;
+.nav-link{
+    color: #000000;
+    font-weight: 400;
 }
-
-
+.nav-item a:hover{
+    color: #d20404;
+    text-decoration: overline;
+}
 .logo{
     width: 60px;
     cursor: pointer;
-    
-
 }
 /********************** header **********************/
 
@@ -65,6 +43,21 @@ body{
 
    /************** pagina principal***********/
 
+
+.contenedor-titulo{
+display: flex;
+justify-content: center;
+
+}
+.titulo-principal{ 
+    text-decoration: overline;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: 10px;
+    color: #520de6;
+    text-align: center;
+    
+}
 .productos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -112,8 +105,293 @@ body{
     object-fit: cover;
    
 }
+.banner_productos{
+    width: 100%;
+    height: 400px;
+    background: url(../imagenes/Hasbro-Banner.jpeg.webp)no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    color: #fafafa;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.contenedor{
+    
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 20px;
+   
+}
+.product-card{
+    width: 380px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 10px auto;
+    background:#fafafa;
+}
 
+.product-tumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.product-tumb img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.product-details{
+    padding: 20px;
+}
+.product-catagory{
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+.product-details h2 a{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color:#363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.product-details h2 a:hover{
+    color:#fbb72c
 
+}
+.product-bottom-details{
+    overflow: hidden;
+    border-top:3px solid #eee;
+    padding-top: 10px;
+}
+.product-bottom-details div{
+    float: left;
+    width: 50%;
+}
+.product-price{
+    font-size: 18px;
+    color:#fbb72c;
+    font-weight: 600;
+}
+.product-links{
+    text-align: right;
+}
+.product-links a{
+    display: inline-block;
+    margin-left: 5px;
+    color:#544f4f;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.product-links a:hover{
+    color:#fbb72c
+}
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    gap: 10px;
+    margin-bottom: 40px;
+    margin: 10px;
+   
+}
+.home-cards img{
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.home-cards h3{
+    margin-bottom: 5px;
+}
+.home-cards a {
+    display: inline-block;
+    padding-top: 10px;
+    color: #fbb72c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.home-cards a:hover i{
+    margin-left: 10px;
+}
+.banner{
+    width: 100%;
+    height: 350px;
+    background: url(../imagenes/BANNER-35-TOY-STORY-4-1920X700-1170x427.jpeg) no-repeat center center/cover;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.banner .content{
+    width: 40%;
+    padding: 50px 0 0 30px;
+}
+.banner .carbon p{
+    margin: 10px 0 20px;
+    text-transform: capitalize;
+}
+.carbon{
+    text-transform: capitalize;
+    width:100%;
+    height: 350px;
+    background: url(../imagenes/lego_banner.jpeg)no-repeat center center/cover;
+}
+.carbon .content{
+    width: 40%;
+    padding: 50px 0 0 30px;
+}
+.banner_oferta{
+    width: 100%;
+    height: 400px;
+    background: url(../imagenes/banner-principal-m-mattel.webp)no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fbb72c;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.contenedor{
+    
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 20px;
+   
+}
+.product-card{
+    width: 380px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 10px auto;
+    background:#fafafa;
+}
+.badge{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+.product-tumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 300px;
+    padding: 50px;
+}
+.product-tumb img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.product-details{
+    padding: 20px;
+}
+.product-catagory{
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+.product-details h3 a{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color:#363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.product-details h3 a:hover{
+    color:#fbb72c
+
+}
+.product-bottom-details{
+    overflow: hidden;
+    border-top:3px solid #eee;
+    padding-top: 10px;
+}
+.product-bottom-details div{
+    float: left;
+    width: 50%;
+}
+.product-price{
+    font-size: 18px;
+    color:#ff0000;
+    font-weight: 600;
+}
+.product-links{
+    text-align: right;
+}
+.product-links a{
+    display: inline-block;
+    margin-left: 5px;
+    color:#544f4f;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.product-links a:hover{
+    color:#fbb72c;  
+
+}
+.form-contacto{
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+   
+}
+.input-form, textarea{
+    border: 0;outline: 0;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+   
+
+}
+textarea{
+    height: 126px;
+
+}
+.boton-enviar{
+    color: #f6fff9;
+    background:#ff5050;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.half{
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+.right{
+    width: 50%;
+}
+.left{
+    margin-right: 2%;
+}
 /************ footer ***********/
 footer{
     margin-top: 100px;
@@ -231,23 +509,7 @@ footer{
 
 @media screen and (max-width: 780px)
 {
-.menu__navegacion ul{
-overflow: hidden;
 
-flex-direction: column;
-
-
-    
-}
-.menu__navegacion li{
-    padding: 5px;
-}
-.menu__navegacion li:first-child{
-    margin-top: 50px;
-}
-.menu__navegacion li a{
-    font-size: 1rem;
-}
 .productos{
    display: grid;
    grid-template-columns: 100%;
