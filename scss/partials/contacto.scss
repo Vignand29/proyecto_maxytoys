@@ -1,0 +1,39 @@
+
+.form-contacto{
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+   
+}
+.input-form, textarea{
+    border: 0;outline: 0;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+   
+
+}
+textarea{
+    height: 126px;
+
+}
+.boton-enviar{
+    color: #f6fff9;
+    background:#ff5050;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.half{
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+.right{
+    width: 50%;
+}
+.left{
+    margin-right: 2%;
+}

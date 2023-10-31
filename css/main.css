@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Red+Hat+Display:wght@500&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: rgba(251, 251, 251, 0.885);
+}
+
+
+/************* menu navegacion ***********************/
+.navbar{
+    background-color: #ecdfd2;
+    padding: 0 26px;
+  
+}
+
+.nav-link{
+    color: #000000;
+    font-weight: 400;
+}
+.nav-item a:hover{
+    color: #d20404;
+    text-decoration: overline;
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+/********************** header **********************/
+
+ .carousel-item img{
+    width: 100%;
+    height: 400px;
+ }
+
+/********* main *********/
+
+
+   /************** pagina principal***********/
+
+
+.contenedor-titulo{
+display: flex;
+justify-content: center;
+
+}
+.titulo-principal{ 
+    text-decoration: overline;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: 10px;
+    color: #520de6;
+    text-align: center;
+    
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px;
+    gap:20px;
+    grid-template-areas:
+     "paw  lego spidey "
+     " mattel mattel mattel" 
+     " hasbro hasbro hasbro" ;
+}
+.banner_producto{
+    text-align: center;
+    box-shadow: 0 2px 7px #08046b;
+    
+}
+.mattel{
+    grid-area: mattel;
+}
+.hasbro{
+    grid-area: hasbro;
+}
+.banner_producto img{
+    width: 100%;
+    height: 300px;
+}
+.carta_producto{
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 7px #08046b;
+    
+}
+.paw{
+    grid-area: paw;
+}
+.lego{
+    grid-area: lego;
+}
+.spidey{
+    grid-area: spidey;
+}
+.carta_producto img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+   
+}
+.banner_productos{
+    width: 100%;
+    height: 400px;
+    background: url(../imagenes/Hasbro-Banner.jpeg.webp)no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    color: #fafafa;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.contenedor{
+    
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 20px;
+   
+}
+.product-card{
+    width: 380px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 10px auto;
+    background:#fafafa;
+}
+
+.product-tumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.product-tumb img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.product-details{
+    padding: 20px;
+}
+.product-catagory{
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+.product-details h2 a{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color:#363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.product-details h2 a:hover{
+    color:#fbb72c
+
+}
+.product-bottom-details{
+    overflow: hidden;
+    border-top:3px solid #eee;
+    padding-top: 10px;
+}
+.product-bottom-details div{
+    float: left;
+    width: 50%;
+}
+.product-price{
+    font-size: 18px;
+    color:#fbb72c;
+    font-weight: 600;
+}
+.product-links{
+    text-align: right;
+}
+.product-links a{
+    display: inline-block;
+    margin-left: 5px;
+    color:#544f4f;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.product-links a:hover{
+    color:#fbb72c
+}
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    gap: 10px;
+    margin-bottom: 40px;
+    margin: 10px;
+   
+}
+.home-cards img{
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.home-cards h3{
+    margin-bottom: 5px;
+}
+.home-cards a {
+    display: inline-block;
+    padding-top: 10px;
+    color: #fbb72c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.home-cards a:hover i{
+    margin-left: 10px;
+}
+.banner{
+    width: 100%;
+    height: 350px;
+    background: url(../imagenes/BANNER-35-TOY-STORY-4-1920X700-1170x427.jpeg) no-repeat center center/cover;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.banner .content{
+    width: 40%;
+    padding: 50px 0 0 30px;
+}
+.banner .carbon p{
+    margin: 10px 0 20px;
+    text-transform: capitalize;
+}
+.carbon{
+    text-transform: capitalize;
+    width:100%;
+    height: 350px;
+    background: url(../imagenes/lego_banner.jpeg)no-repeat center center/cover;
+}
+.carbon .content{
+    width: 40%;
+    padding: 50px 0 0 30px;
+}
+.banner_oferta{
+    width: 100%;
+    height: 400px;
+    background: url(../imagenes/banner-principal-m-mattel.webp)no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fbb72c;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.contenedor{
+    
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 20px;
+   
+}
+.product-card{
+    width: 380px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 10px auto;
+    background:#fafafa;
+}
+.badge{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+.product-tumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 300px;
+    padding: 50px;
+}
+.product-tumb img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.product-details{
+    padding: 20px;
+}
+.product-catagory{
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+.product-details h3 a{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color:#363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.product-details h3 a:hover{
+    color:#fbb72c
+
+}
+.product-bottom-details{
+    overflow: hidden;
+    border-top:3px solid #eee;
+    padding-top: 10px;
+}
+.product-bottom-details div{
+    float: left;
+    width: 50%;
+}
+.product-price{
+    font-size: 18px;
+    color:#ff0000;
+    font-weight: 600;
+}
+.product-links{
+    text-align: right;
+}
+.product-links a{
+    display: inline-block;
+    margin-left: 5px;
+    color:#544f4f;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.product-links a:hover{
+    color:#fbb72c;  
+
+}
+.form-contacto{
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+   
+}
+.input-form, textarea{
+    border: 0;outline: 0;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+   
+
+}
+textarea{
+    height: 126px;
+
+}
+.boton-enviar{
+    color: #f6fff9;
+    background:#ff5050;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.half{
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+.right{
+    width: 50%;
+}
+.left{
+    margin-right: 2%;
+}
+/************ footer ***********/
+footer{
+    margin-top: 100px;
+    background-color:#003049;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+   
+}
+.lista_footer{
+    display: flex;
+    
+  
+}
+.lista_footer li{
+    list-style: none;
+    
+}
+.lista_footer li a{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+.lista_footer li a .icon{
+    position: relative;
+    color:#262626;
+    transition: .5s;
+    z-index: 3;
+}
+.lista_footer li a:hover .icon{
+    color: #fffefe;
+}
+    
+.lista_footer li a:before {
+    content: "";
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+    
+}
+.lista_footer li a:hover:before{
+    top:0;
+}
+.lista_footer li:nth-child(1) a:before{
+    background: #dd2a7b;
+    
+}
+.lista_footer li:nth-child(2) a:before{
+    background: #3b5999;
+}
+.lista_footer li:nth-child(3) a:before{
+    background: #25d366;
+}
+.lista_footer li:nth-child(4) a:before{
+    background: #040404;
+}
+.site_footer hr{
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+.site_footer hr.small{
+    margin: 20px 0;
+}
+.site_footer h6{
+    color:#fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+.site_footer a{
+    color: #737373;
+    text-decoration: none;
+}
+.site_footer a:hover{
+    color: #3366cc;
+    text-decoration: none;
+}
+.footer_links{
+    padding-left: 0;
+    list-style: none;
+}
+.footer_links li{
+    display: block;
+}
+.footer_links a{
+    color:#737373;
+}
+.footer_links a:active, .footer-links a:focus, .footer-links a:hover{
+    color:#3366cc;
+    text-decoration: none;
+}
+.footer_links .inline li{
+    display: inline-block;
+}
+
+
+
+
+
+@media screen and (max-width: 780px)
+{
+
+.productos{
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-areas: 
+   "paw"
+   "spidey"
+   "hasbro"
+   "mattel"
+   "lego";
+}
+}
